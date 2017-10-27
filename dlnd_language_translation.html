@@ -11905,7 +11905,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_to_ids</span><span class="p">(</span><span class="n">source_text</span><span class="p">,</span> <span class="n">target_text</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">):</span>
@@ -11922,9 +11922,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
         
     <span class="n">source_id_text</span> <span class="o">=</span> <span class="p">[[</span><span class="n">source_vocab_to_int</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">source_sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="k">for</span> <span class="n">source_sentence</span> <span class="ow">in</span> <span class="n">source_sentences</span><span class="p">]</span>
     <span class="n">target_id_text</span> <span class="o">=</span> <span class="p">[[</span><span class="n">target_vocab_to_int</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">target_sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="k">for</span> <span class="n">target_sentence</span> <span class="ow">in</span> <span class="n">target_sentences</span><span class="p">]</span>
-    
+
     <span class="p">[</span><span class="n">target_id_sentence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;EOS&gt;&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">target_id_sentence</span> <span class="ow">in</span> <span class="n">target_id_text</span><span class="p">]</span>
-    
+
     <span class="k">return</span> <span class="n">source_id_text</span><span class="p">,</span> <span class="n">target_id_text</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -11967,7 +11967,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11992,7 +11992,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12021,7 +12021,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12109,7 +12109,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_inputs</span><span class="p">():</span>
@@ -12169,7 +12169,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_decoder_input</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
@@ -12229,7 +12229,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">imp</span> <span class="k">import</span> <span class="n">reload</span>
@@ -12256,7 +12256,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
         <span class="k">return</span> <span class="n">cell</span>
     
     <span class="n">stacked_lstm</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">MultiRNNCell</span><span class="p">([</span><span class="n">lstm_cell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)])</span>
-    <span class="n">stacked_lstm</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">DropoutWrapper</span><span class="p">(</span><span class="n">stacked_lstm</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
+    <span class="n">stacked_lstm</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">DropoutWrapper</span><span class="p">(</span><span class="n">stacked_lstm</span><span class="p">,</span> <span class="n">output_keep_prob</span><span class="o">=</span><span class="n">keep_prob</span><span class="p">)</span>
     
     <span class="n">output</span><span class="p">,</span> <span class="n">state</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">dynamic_rnn</span><span class="p">(</span><span class="n">stacked_lstm</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">,</span> <span class="n">sequence_length</span><span class="o">=</span><span class="n">source_sequence_length</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
     
@@ -12307,7 +12307,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> 
@@ -12324,6 +12324,8 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <span class="sd">    :param keep_prob: Dropout keep probability</span>
 <span class="sd">    :return: BasicDecoderOutput containing training logits and sample_id</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dec_cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">DropoutWrapper</span><span class="p">(</span><span class="n">dec_cell</span><span class="p">,</span><span class="n">output_keep_prob</span><span class="o">=</span><span class="n">keep_prob</span><span class="p">)</span>
+    
     <span class="n">helper</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">seq2seq</span><span class="o">.</span><span class="n">TrainingHelper</span><span class="p">(</span><span class="n">dec_embed_input</span><span class="p">,</span> <span class="n">target_sequence_length</span><span class="p">)</span>    
     <span class="n">basic_decoder</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">seq2seq</span><span class="o">.</span><span class="n">BasicDecoder</span><span class="p">(</span><span class="n">dec_cell</span><span class="p">,</span> <span class="n">helper</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span> <span class="n">output_layer</span><span class="p">)</span>
     
@@ -12380,7 +12382,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">start_of_sequence_id</span><span class="p">,</span>
@@ -12463,7 +12465,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.python.layers.core</span> <span class="k">import</span> <span class="n">Dense</span>
@@ -12573,7 +12575,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">seq2seq_model</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">target_data</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span>
@@ -12675,7 +12677,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
@@ -12712,7 +12714,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12782,7 +12784,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12835,7 +12837,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import os</span>
@@ -12937,36 +12939,36 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch  300/1077 - Train Accuracy: 0.3618, Validation Accuracy: 0.4375, Loss: 1.4377
-Epoch   0 Batch  600/1077 - Train Accuracy: 0.5428, Validation Accuracy: 0.5543, Loss: 0.8067
-Epoch   0 Batch  900/1077 - Train Accuracy: 0.5711, Validation Accuracy: 0.5692, Loss: 0.7084
-Epoch   1 Batch  300/1077 - Train Accuracy: 0.6032, Validation Accuracy: 0.6090, Loss: 0.5752
-Epoch   1 Batch  600/1077 - Train Accuracy: 0.6384, Validation Accuracy: 0.6637, Loss: 0.4612
-Epoch   1 Batch  900/1077 - Train Accuracy: 0.6785, Validation Accuracy: 0.6854, Loss: 0.4231
-Epoch   2 Batch  300/1077 - Train Accuracy: 0.7570, Validation Accuracy: 0.7418, Loss: 0.3022
-Epoch   2 Batch  600/1077 - Train Accuracy: 0.7779, Validation Accuracy: 0.7976, Loss: 0.2316
-Epoch   2 Batch  900/1077 - Train Accuracy: 0.8242, Validation Accuracy: 0.8036, Loss: 0.2051
-Epoch   3 Batch  300/1077 - Train Accuracy: 0.8886, Validation Accuracy: 0.8523, Loss: 0.1323
-Epoch   3 Batch  600/1077 - Train Accuracy: 0.8895, Validation Accuracy: 0.8771, Loss: 0.1249
-Epoch   3 Batch  900/1077 - Train Accuracy: 0.9227, Validation Accuracy: 0.8764, Loss: 0.1143
-Epoch   4 Batch  300/1077 - Train Accuracy: 0.9416, Validation Accuracy: 0.8999, Loss: 0.0684
-Epoch   4 Batch  600/1077 - Train Accuracy: 0.9111, Validation Accuracy: 0.8860, Loss: 0.0694
-Epoch   4 Batch  900/1077 - Train Accuracy: 0.9437, Validation Accuracy: 0.8999, Loss: 0.0601
-Epoch   5 Batch  300/1077 - Train Accuracy: 0.9696, Validation Accuracy: 0.9272, Loss: 0.0384
-Epoch   5 Batch  600/1077 - Train Accuracy: 0.9572, Validation Accuracy: 0.9254, Loss: 0.0472
-Epoch   5 Batch  900/1077 - Train Accuracy: 0.9406, Validation Accuracy: 0.9421, Loss: 0.0425
-Epoch   6 Batch  300/1077 - Train Accuracy: 0.9745, Validation Accuracy: 0.9400, Loss: 0.0264
-Epoch   6 Batch  600/1077 - Train Accuracy: 0.9423, Validation Accuracy: 0.9244, Loss: 0.0365
-Epoch   6 Batch  900/1077 - Train Accuracy: 0.9531, Validation Accuracy: 0.9485, Loss: 0.0316
-Epoch   7 Batch  300/1077 - Train Accuracy: 0.9840, Validation Accuracy: 0.9556, Loss: 0.0211
-Epoch   7 Batch  600/1077 - Train Accuracy: 0.9691, Validation Accuracy: 0.9347, Loss: 0.0283
-Epoch   7 Batch  900/1077 - Train Accuracy: 0.9625, Validation Accuracy: 0.9542, Loss: 0.0263
-Epoch   8 Batch  300/1077 - Train Accuracy: 0.9725, Validation Accuracy: 0.9570, Loss: 0.0194
-Epoch   8 Batch  600/1077 - Train Accuracy: 0.9594, Validation Accuracy: 0.9652, Loss: 0.0239
-Epoch   8 Batch  900/1077 - Train Accuracy: 0.9637, Validation Accuracy: 0.9538, Loss: 0.0230
-Epoch   9 Batch  300/1077 - Train Accuracy: 0.9836, Validation Accuracy: 0.9513, Loss: 0.0194
-Epoch   9 Batch  600/1077 - Train Accuracy: 0.9490, Validation Accuracy: 0.9673, Loss: 0.0214
-Epoch   9 Batch  900/1077 - Train Accuracy: 0.9766, Validation Accuracy: 0.9624, Loss: 0.0191
+<pre>Epoch   0 Batch  300/1077 - Train Accuracy: 0.4157, Validation Accuracy: 0.4925, Loss: 1.4346
+Epoch   0 Batch  600/1077 - Train Accuracy: 0.5543, Validation Accuracy: 0.5600, Loss: 0.8595
+Epoch   0 Batch  900/1077 - Train Accuracy: 0.5848, Validation Accuracy: 0.6016, Loss: 0.7530
+Epoch   1 Batch  300/1077 - Train Accuracy: 0.6151, Validation Accuracy: 0.5877, Loss: 0.5766
+Epoch   1 Batch  600/1077 - Train Accuracy: 0.6674, Validation Accuracy: 0.6261, Loss: 0.4546
+Epoch   1 Batch  900/1077 - Train Accuracy: 0.6809, Validation Accuracy: 0.7053, Loss: 0.4337
+Epoch   2 Batch  300/1077 - Train Accuracy: 0.8084, Validation Accuracy: 0.7695, Loss: 0.3177
+Epoch   2 Batch  600/1077 - Train Accuracy: 0.8285, Validation Accuracy: 0.8011, Loss: 0.2625
+Epoch   2 Batch  900/1077 - Train Accuracy: 0.8512, Validation Accuracy: 0.8263, Loss: 0.2381
+Epoch   3 Batch  300/1077 - Train Accuracy: 0.8857, Validation Accuracy: 0.8306, Loss: 0.1698
+Epoch   3 Batch  600/1077 - Train Accuracy: 0.8698, Validation Accuracy: 0.8366, Loss: 0.1468
+Epoch   3 Batch  900/1077 - Train Accuracy: 0.9199, Validation Accuracy: 0.8647, Loss: 0.1437
+Epoch   4 Batch  300/1077 - Train Accuracy: 0.9215, Validation Accuracy: 0.8679, Loss: 0.1112
+Epoch   4 Batch  600/1077 - Train Accuracy: 0.9327, Validation Accuracy: 0.8917, Loss: 0.0994
+Epoch   4 Batch  900/1077 - Train Accuracy: 0.9344, Validation Accuracy: 0.9023, Loss: 0.1003
+Epoch   5 Batch  300/1077 - Train Accuracy: 0.9326, Validation Accuracy: 0.8896, Loss: 0.0685
+Epoch   5 Batch  600/1077 - Train Accuracy: 0.9435, Validation Accuracy: 0.9176, Loss: 0.0695
+Epoch   5 Batch  900/1077 - Train Accuracy: 0.9332, Validation Accuracy: 0.9265, Loss: 0.0746
+Epoch   6 Batch  300/1077 - Train Accuracy: 0.9552, Validation Accuracy: 0.9205, Loss: 0.0595
+Epoch   6 Batch  600/1077 - Train Accuracy: 0.9468, Validation Accuracy: 0.9428, Loss: 0.0550
+Epoch   6 Batch  900/1077 - Train Accuracy: 0.9453, Validation Accuracy: 0.9283, Loss: 0.0554
+Epoch   7 Batch  300/1077 - Train Accuracy: 0.9391, Validation Accuracy: 0.9347, Loss: 0.0506
+Epoch   7 Batch  600/1077 - Train Accuracy: 0.9412, Validation Accuracy: 0.9478, Loss: 0.0460
+Epoch   7 Batch  900/1077 - Train Accuracy: 0.9609, Validation Accuracy: 0.9517, Loss: 0.0485
+Epoch   8 Batch  300/1077 - Train Accuracy: 0.9548, Validation Accuracy: 0.9311, Loss: 0.0372
+Epoch   8 Batch  600/1077 - Train Accuracy: 0.9327, Validation Accuracy: 0.9325, Loss: 0.0408
+Epoch   8 Batch  900/1077 - Train Accuracy: 0.9621, Validation Accuracy: 0.9432, Loss: 0.0383
+Epoch   9 Batch  300/1077 - Train Accuracy: 0.9478, Validation Accuracy: 0.9521, Loss: 0.0271
+Epoch   9 Batch  600/1077 - Train Accuracy: 0.9561, Validation Accuracy: 0.9304, Loss: 0.0326
+Epoch   9 Batch  900/1077 - Train Accuracy: 0.9660, Validation Accuracy: 0.9570, Loss: 0.0334
 Model Trained and Saved
 </pre>
 </div>
@@ -12987,7 +12989,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13012,7 +13014,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13050,7 +13052,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sentence_to_seq</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">vocab_to_int</span><span class="p">):</span>
@@ -13106,7 +13108,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">translate_sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck .&#39;</span>
@@ -13159,12 +13161,12 @@ Model Trained and Saved
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from checkpoints/dev
 Input
-  Word Ids:      [182, 8, 58, 137, 149, 148, 142]
+  Word Ids:      [75, 140, 107, 223, 120, 225, 155]
   English Words: [&#39;he&#39;, &#39;saw&#39;, &#39;a&#39;, &#39;old&#39;, &#39;yellow&#39;, &#39;truck&#39;, &#39;.&#39;]
 
 Prediction
-  Word Ids:      [216, 118, 336, 305, 341, 348, 50, 156, 1, 0, 0, 0, 0, 0]
-  French Words: il a pas la petite voiture noire . &lt;EOS&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+  Word Ids:      [8, 310, 96, 300, 57, 113, 235, 1, 0, 0, 0, 0, 0, 0]
+  French Words: il a conduit une voiture jaune . &lt;EOS&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
